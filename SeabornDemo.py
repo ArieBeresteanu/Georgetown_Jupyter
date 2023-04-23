@@ -156,4 +156,5 @@ df = pd.read_csv(io.StringIO(data), sep='\s+',header=None, names=['Year','raw','
 
 sns.lineplot(x='Year', y='raw', data=df, label='Raw')
 plt.title("Temperature Above Average")
+plt.axhline(y=0, color='r')
 plt.show()
